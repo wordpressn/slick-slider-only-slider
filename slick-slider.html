@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css?v2022">
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css?v2022">
+  <style type="text/css">
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+    html,* { font-family: 'Inter'; }
+body { background-color: #4B5563; line-height:1.6; color: #fff;}
+
+.container { margin: 50px auto; max-width: 1200px; }
+
+    .slider {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: 1;
+    }
+    
+    .slick-active {
+      opacity: 1;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+
+    @media only screen and (max-width: 600px) {
+ .slick-prev{
+  z-index: 999;
+  left: 7px !important;
+ }
+ .slick-next{
+  z-index: 999;
+  right: 13px !important;
+ }
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+   
+
+<h2>Basic</h2>
+  <section class="regular slider">
+    <div>
+      <img src="https://concordrealestatebd.com/admin/uploads/page/national-monument-at-savar/405x454/1662291900xi6E2_m.jpg">
+    </div>
+    <div>
+      <img src="https://concordrealestatebd.com/admin/uploads/page/singtel-telecom-tower-in-singapore/405x454/16622920988f3XX_m.jpg">
+    </div>
+    <div>
+      <img src="https://concordrealestatebd.com/admin/uploads/page/hazrat-shahjalal-international-airport/405x454/166229218025TRn_m.jpg">
+    </div>
+    <div>
+      <img src="https://concordrealestatebd.com/admin/uploads/page/national-monument-at-savar/405x454/1662291900xi6E2_m.jpg">
+    </div>
+    <div>
+      <img src="https://concordrealestatebd.com/admin/uploads/page/national-monument-at-savar/405x454/1662291900xi6E2_m.jpg">
+    </div>
+    <div>
+      <img src="https://concordrealestatebd.com/admin/uploads/page/national-monument-at-savar/405x454/1662291900xi6E2_m.jpg">
+    </div>
+  </section>
+ 
+
+
+
+
+
+</div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js"></script>
+  <script src="./slick/slick.js?v2022" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+    
+      $(".regular").slick({
+        dots: false,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+
+
+
+
+      });
+
+
+      
+    });
+</script>
+
+</body>
+</html>
